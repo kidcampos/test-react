@@ -8,7 +8,7 @@ function App() {
 const [count, setCount] = useState(0);
 
 const handleRequest = () => {
-	axios.get('/api/products')
+	axios.get('/api')
 	.then(res => { console.log(res); })
 	.catch(err => { console.error(err) });
 }
